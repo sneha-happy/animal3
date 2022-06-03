@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sound Identification Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Are+You+Serious&family=Indie+Flower&family=Poppins&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="header_div text-center">
+      <h2 id="head1">Animal Voice recogniser</h2>
+      <p id="note1">This web app recognises the sounds of following animals: Dog, Cat, Lion and Cow</p>
+    </div>
+
+    <div class="main_div">
+      <center>
+      <br> 
+      <button onclick="Start()" class="btn btn-primary">Start</button>
+      <br> <br> 
+      <h4 id="result_label">I can hear: <span id="recognise_sound"></span></h4>
+      
+      <h4 id="accuracy_label">Accuracy: <span id="accuracy_of_sound"></span></h4>
+
+      <div id="img_div"> 
+        <img id="image" src="ear.jpg">
+      </div>
+
+      </center>
+      </div>
+      <div class="copy_right_footer" id="footer">Developed by Sneha</div>
+<script src="main.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+ 
+
